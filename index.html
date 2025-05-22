@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Every Bite - Recipes</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/883df57fc9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,10 +13,10 @@
        
         <nav>
             <ul>
-                <li><a href="home.html" class="hover:bg-green-600 rounded-lg px-4 py-2 border-b-2 border-green-500">Home</a></li>
-                <li><a href="recipe.html" class="hover:bg-green-600 rounded-lg px-4 py-2">Recipes</a></li>
-                <li><a href="favourites.html"  class="hover:bg-green-600 rounded-lg px-4 py-2">Favorites</a></li>
-                <li><a href="login.html"class="hover:bg-blue-600 rounded-lg px-4 py-2" >Login</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Recipes</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -56,11 +55,53 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-        <h2>Popular Recipes</h2>
+         <h2>Explore by Categories</h2>
         <section class="popular-recipes">
-            
-            <!-- Recipe cards would go here -->
+            <div class="card">
+  <img src="lasagna.jpg" alt="Avatar" width="250px" height="250px">
+  <div class="container">
+    <h4><b>Lasagna</b></h4> 
+    <button class="view-button"><a href="recipe.html">View Recipe</a></button>  
+  </div>
+</div>
+      <div class="card">
+  <img src="chicken burito.jpg" width="250px" height="250px">
+  <div class="card-container">
+    <h4><b>Chicken Burito</b></h4>
+    <button class="view-button"><a href="recipe.html">View Recipe</a></button> 
+  </div>
+</div>
+    <div class="card">
+  <img src="mimosa.jpg" width="250px" height="250px">
+  <div class="container">
+    <h4><b>Mimosa</b></h4> 
+    <button class="view-button"><a href="recipe.html">View Recipe</a></button>  
+  </div>
+</div>
+        <div class="card">
+  <img src="pizza.jpg" width="250px" height="250px">
+  <div class="container">
+    <h4><b>Pizza</b></h4> 
+    <button class="view-button"><a href="recipe.html">View Recipe</a></button>  
+  </div>
+</div>
+       <div class="card">
+  <img src="ice cream.jpeg" width="250px" height="250px">
+  <div class="container">
+    <h4><b>Cream Cake</b></h4> 
+    <button class="view-button"><a href="recipe.html">View Recipe</a></button>  
+  </div>
+</div>
+        <div class="card">
+  <img src="cakes.jpeg" width="250px" height="250px">
+  <div class="container">
+    <h4><b>Cakes</b></h4> 
+    <button class="view-button"><a href="recipe.html">View Recipe</a></button>  
+  </div>
+</div>
+        
         </section>
+
 
         <section class="contact">
             <h3>Send us a message</h3>
@@ -78,11 +119,6 @@
             <a href="#">Search</a>
             <a href="#">Favorites</a>
         </div>
-        <div class="mt-6 text-right ">
-      <button onclick="logout()" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Logout</button>
-    </div>
-  </div>
-
     </footer>
 
     <script src="script.js"></script>
