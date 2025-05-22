@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body >
+    <header>
+        <div class="logo"><i class="fa-solid fa-utensils"></i> </div>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe.html" class="active">Recipes</a></li>
+                
+            </ul>
+        </nav>
+    </header>
     <div class="search-container">
         <input type="text" placeholder="Search for recipes..."id="query">
         <button type="submit" id="submit-button" onclick="searchRecipes()">Search</button>
@@ -169,6 +180,34 @@ body{
 }
 #close-button{
     cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff9db;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    
 }
     </style>
     <script>
