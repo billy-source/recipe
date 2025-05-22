@@ -30,6 +30,7 @@
       if (savedUser && savedUser.username === username && savedUser.password === password) {
         localStorage.setItem("loggedIn", "true");
         window.location.href = "index.html";
+        
       } else {
         alert("Invalid credentials");
       }

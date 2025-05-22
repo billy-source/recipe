@@ -38,9 +38,11 @@ setInterval(function() {
  
 const user = JSON.parse(localStorage.getItem("user"));
     const loggedIn = localStorage.getItem("loggedIn");
+const login =document.getElementById("login")
 
     if (!loggedIn) {
       window.location.href = "login.html";
+      login.textContent = "My Account"
     }
 
     document.getElementById("username").textContent = user?.username || "Guest";
@@ -49,3 +51,4 @@ const user = JSON.parse(localStorage.getItem("user"));
         localStorage.removeItem("loggedIn");
       window.location.href = "login.html";
     }
+
