@@ -38,17 +38,22 @@ setInterval(function() {
  
 const user = JSON.parse(localStorage.getItem("user"));
     const loggedIn = localStorage.getItem("loggedIn");
-const login =document.getElementById("login")
+const login = document.getElementById("login");
 
-    if (!loggedIn) {
-      window.location.href = "login.html";
-      login.textContent = "My Account"
+if (!loggedIn) {
+    if (login) {
+        login.textContent = "My Account";
+    }
+    window.location.href = "login.html";
+}
+
+    const usernameElem = document.getElementById("username");
+    if (usernameElem) {
+        usernameElem.textContent = user?.username || "Guest";
     }
 
-    document.getElementById("username").textContent = user?.username || "Guest";
-
-    function logout() {
+    function logout() {
         localStorage.removeItem("loggedIn");
-      window.location.href = "login.html";
+        window.location.href = "login.html";
     }
 
