@@ -13,16 +13,7 @@
 <body >
     <header>
         <div class="logo"><i class="fa-solid fa-utensils"></i> </div>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="recipe.html" class="active">Recipes</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="search-container">
+        <div class="search-container">
         <input type="text" placeholder="Search for recipes..."id="query">
         <button type="submit" id="submit-button" onclick="searchRecipes()">Search</button>
     </div>
@@ -35,6 +26,15 @@
         </div>
         <div id="recipe-content"></div>
     </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe.html" class="active">Recipes</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <style>
         *{
     margin: 0;
@@ -185,9 +185,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    width: 100%;
     background-color: #fff9db;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
 }
 
 .logo {
@@ -207,8 +208,10 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    
+
 }
+
+
     </style>
     <script>
     const apiKey = 'e19cc7272f1d421c80ad93845dc4a6e2';
